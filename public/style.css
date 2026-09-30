@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1faf6;
+    color: #244d3a;
+    padding: 45px 6%;
+}
+
+/* Header */
+.page-header {
+    border-bottom: 3px solid #8ed1ad;
+    padding: 0 5px 22px;
+    margin-bottom: 25px;
+}
+
+.small-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #159957;
+}
+
+.page-header h1 {
+    font-size: 34px;
+    color: #12643f;
+    margin: 4px 0;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #71867b;
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* Header */
+.custom-table thead {
+    background: #178a56;
+    color: white;
+}
+
+.custom-table th {
+    padding: 16px 14px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.custom-table th:nth-child(1),
+.custom-table th:nth-child(2) {
+    text-align: center;
+}
+
+/* Rows */
+.custom-table td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #d9eee2;
+    font-size: 13px;
+}
+
+/* Alternating mint rows */
+.custom-table tbody tr:nth-child(odd) {
+    background: #f5fcf8;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background: #e4f6ec;
+}
+
+/* Hover */
+.custom-table tbody tr:hover {
+    background: #cceedd;
+}
+
+/* IDs */
+.custom-table td:nth-child(1),
+.custom-table td:nth-child(2) {
+    color: #13834f;
+    font-weight: 600;
+}
+
+/* Title */
+.custom-table td:nth-child(3) {
+    color: #17623f;
+    font-weight: 600;
+}
+
+/* Body */
+.custom-table td:nth-child(4) {
+    color: #60766b;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .custom-table {
+        min-width: 850px;
+    }
+}
+
+
+
+
